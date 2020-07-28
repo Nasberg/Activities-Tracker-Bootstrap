@@ -1,0 +1,284 @@
+:root {
+  --color1: #00154f;
+  --color2: #f4af1b;
+  --color3: #fff3e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: var(--color1); */
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color1),
+    var(--color2)
+  );
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.color1 {
+  color: var(--color1);
+}
+
+.content-height {
+  height: 95vh;
+}
+
+.half-content-height {
+  height: 46vh;
+}
+
+.sidebar,
+.content-hub {
+  height: 100%;
+}
+
+.btn-link.active {
+  background-color: var(--color2);
+}
+
+.btn-link.active i {
+  color: var(--color1);
+}
+
+.react-calendar {
+  width: 100%;
+  height: 46vh;
+  overflow: auto;
+  background-color: transparent;
+  border-top: none;
+  border-color: var(--color2);
+}
+
+.react-calendar__navigation button {
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: var(--color1);
+  color: var(--color3);
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  color: var(--color3);
+}
+
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+  color: var(--color3);
+}
+
+.react-calendar__tile {
+  color: var(--color1);
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: rgb(162, 4, 0);
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: var(--color2);
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: rgba(0, 21, 79, 0.4);
+}
+
+.react-calendar__tile--now,
+.react-calendar__tile--now.react-calendar__tile--active {
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+.react-calendar__tile--active {
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus,
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background-color: var(--color2);
+  color: var(--color3);
+}
+
+.fc {
+  width: 100%;
+  height: 60vh !important;
+  overflow: auto;
+}
+
+.fc-left h2 {
+  color: var(--color1);
+}
+
+.fc-today-button {
+  background-color: var(--color1);
+  border-color: var(--color1);
+  transition: 0.4s;
+}
+
+.fc-today-button:hover:not(:disabled) {
+  background-color: var(--color2);
+  border-color: var(--color1);
+  color: var(--color1);
+}
+
+.fc-today-button:disabled {
+  background-color: var(--color1);
+}
+
+.fc-prev-button,
+.fc-next-button {
+  background-color: var(--color3);
+  border-color: var(--color3);
+  color: var(--color1);
+  transition: 0.4s;
+}
+
+.fc-prev-button:hover,
+.fc-next-button:hover {
+  background-color: var(--color2);
+  border-color: var(--color2);
+  color: var(--color1);
+}
+
+.fc-day-header {
+  color: var(--color1);
+}
+
+/* .fc-day-grid-container {
+  height: 4.5rem !important;
+} */
+
+h6 {
+  font-size: 1.1rem;
+}
+
+.btn-100 {
+  width: 100%;
+}
+
+.img-profile-pic {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 10rem;
+}
+
+.main-content-card {
+  overflow: auto;
+  height: 46vh;
+}
+
+.content-card,
+.content-card-title {
+  background-color: var(--color3);
+}
+
+/* width */
+.react-calendar::-webkit-scrollbar,
+.content-card::-webkit-scrollbar {
+  width: 0.45rem;
+}
+
+/* Track */
+.react-calendar::-webkit-scrollbar-track,
+.content-card::-webkit-scrollbar-track {
+  background: var(--color3);
+}
+
+/* Handle */
+.react-calendar::-webkit-scrollbar-thumb,
+.content-card::-webkit-scrollbar-thumb {
+  background: var(--color2);
+}
+
+/* Handle on hover */
+.react-calendar::-webkit-scrollbar-thumb:hover,
+.content-card::-webkit-scrollbar-thumb:hover {
+  background: var(--color1);
+}
+
+.sidebar {
+  background-color: var(--color1);
+  box-shadow: 3px 3px 4px 0.3px rgba(0, 0, 0, 0.2),
+    -3px -3px 1px 0.1px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar i {
+  color: var(--color2);
+}
+
+.img-news {
+  background-image: cover;
+}
+
+.activity-card,
+.team-card {
+  background-color: var(--color2);
+  box-sizing: border-box;
+  border: 0.1rem solid var(--color2);
+}
+
+.activity-card:hover,
+.team-card:hover {
+  border: 0.1rem solid var(--color1);
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 34vh;
+}
+
+.carousel-indicators li {
+  background-color: var(--color1);
+}
+
+.carousel-control-icon {
+  color: var(--color2);
+}
+
+.profile-content-card {
+  overflow: auto;
+  height: 16vh;
+  background-color: var(--color3);
+}
+
+.team-content-card {
+  overflow: auto;
+  height: 76vh;
+}
+
+.contact-content-card {
+  height: 32vh;
+}
+
+.week-calendar {
+  height: 32vh;
+}
+
+.btn-primary,
+.btn-secondary,
+input[type="text"] {
+  border-radius: 2rem;
+}
+
+.category-link {
+  text-decoration: none;
+  color: var(--color1);
+  opacity: 0.75;
+}
+
+.category-link:hover {
+  color: var(--color2);
+  opacity: 1;
+}
